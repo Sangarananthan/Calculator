@@ -1,0 +1,101 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  background-color: black;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(Background.png);
+  background-size: cover;
+  background-repeat: repeat;
+}
+.calc {
+  height: 90vh;
+  width: 350px;
+  display: flex;
+  overflow: hidden;
+}
+.callculator {
+  height: 720px;
+  width: inherit;
+  background-image: url(iphone.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  background-color: rgb(0, 0, 0);
+  height: 98%;
+  width: 95%;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.inputfield {
+  height: 40%;
+  padding: 20px;
+  text-align: end;
+  align-content: end;
+  color: white;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.buttons {
+  height: 60%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 73px);
+  grid-template-rows: repeat(5, 73px);
+  grid-gap: 4px;
+}
+.btn {
+  background-color: rgb(45, 45, 45);
+  border: none;
+  text-align: center;
+  height: 90%;
+  width: 90%;
+  color: white;
+  font-family: sans-serif;
+  font-size: xx-large;
+  border-radius: 50%;
+}
+.btn:hover {
+  background-color: rgba(129, 129, 129, 0.575);
+}
+
+.zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-radius: 50px;
+  text-align: start;
+  padding-left: 20px;
+}
+.equal {
+  border-radius: 50px;
+  grid-column-start: 4;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+
+.orng {
+  background-color: rgb(243, 158, 0);
+}
+
+.whi {
+  background-color: rgb(181, 181, 181);
+  color: black;
+}
